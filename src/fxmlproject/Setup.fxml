@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" styleClass="ongame" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlproject.MenuController">
+   <children>
+      <Button fx:id="setupBackBTN" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#setupBackBTN" prefHeight="50.0" prefWidth="200.0" styleClass="rich-blue1" stylesheets="@style.css" text="Back">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="startGame" layoutX="507.0" layoutY="523.0" mnemonicParsing="false" onAction="#startGame" styleClass="rich-blue1" stylesheets="@style.css" text="START GAME">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Button>
+      <VBox layoutX="390.0" layoutY="180.0" prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="500.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="INSERT YOUR START MONEY" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="500.0">
+               <children>
+                  <TextField fx:id="bankText" alignment="CENTER_RIGHT" disable="true" prefHeight="50.0" prefWidth="430.0" style="-fx-opacity: 1;" styleClass="copyable-label" text="\$0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="reset" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="50.0" styleClass="rich-blue1" stylesheets="@style.css" text="RESET" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="120.0" prefWidth="500.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="500.0">
+                     <children>
+                        <Button fx:id="add1" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="1">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="add10" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="10">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="add50" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="50">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="500.0">
+                     <children>
+                        <Button fx:id="add100" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="100">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="add500" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="500">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="add1000" mnemonicParsing="false" onAction="#addMoney" prefHeight="50.0" prefWidth="150.0" styleClass="rich-blue1" stylesheets="@style.css" text="1000">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

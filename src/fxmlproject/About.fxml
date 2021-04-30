@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" styleClass="HOwto" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlproject.MenuController">
+   <children>
+      <Button fx:id="aboutBackBTN" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#aboutBackBTN" prefHeight="50.0" prefWidth="200.0" styleClass="rich-blue" text="Back">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
